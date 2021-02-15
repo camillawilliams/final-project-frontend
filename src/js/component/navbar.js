@@ -3,14 +3,44 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
+		<nav className="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+			<div className="container">
+				<a className="navbar-brand logo" href="#">
+					Brand
+				</a>
+				<button data-toggle="collapse" className="navbar-toggler" data-target="#navcol-1">
+					<span className="sr-only">Toggle navigation</span>
+					<span className="navbar-toggler-icon" />
+				</button>
+				<div className="collapse navbar-collapse" id="navcol-1">
+					<ul className="nav navbar-nav ml-auto">
+						<li className="nav-item">
+							<a className="nav-link active" href="index.html">
+								Home
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="features.html">
+								Features
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="pricing.html">
+								Pricing
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="about-us.html">
+								About Us
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="contact-us.html">
+								Contact Us
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	);
