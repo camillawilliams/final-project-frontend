@@ -10,7 +10,7 @@ export const Jumbotron = () => (
 					mattis vitae leo.
 				</p>
 				<button className="btn btn-outline-light btn-lg" type="button">
-					Learn More
+					Learn more
 				</button>
 			</div>
 		</section>
