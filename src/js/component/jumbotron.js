@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+// import image5 from "../../img/image5.jpg";
 
 export const Jumbotron = () => (
 	<main className="page landing-page">
-		<section className="clean-block clean-hero" style={""}>
+		<section className="clean-block clean-hero">
 			<div className="text">
 				<h2>Lorem ipsum dolor sit amet.</h2>
 				<p>
@@ -25,7 +26,7 @@ export const Jumbotron = () => (
 				</div>
 				<div className="row align-items-center">
 					<div className="col-md-6">
-						<img className="img-thumbnail" src="assets/img/scenery/image5.jpg" />
+						<img className="img-thumbnail" src={image5} />
 					</div>
 					<div className="col-md-6">
 						<h3>Lorem impsum dolor sit amet</h3>
@@ -99,13 +100,13 @@ export const Jumbotron = () => (
 				<div className="carousel slide" data-ride="carousel" id="carousel-1">
 					<div className="carousel-inner">
 						<div className="carousel-item active">
-							<img className="w-100 d-block" src="assets/img/scenery/image1.jpg" alt="Slide Image" />
+							<img className="w-100 d-block" src="bs1/assets/img/scenery/image1.jpg" alt="Slide Image" />
 						</div>
 						<div className="carousel-item">
-							<img className="w-100 d-block" src="assets/img/scenery/image4.jpg" alt="Slide Image" />
+							<img className="w-100 d-block" src="bs1/assets/img/scenery/image4.jpg" alt="Slide Image" />
 						</div>
 						<div className="carousel-item">
-							<img className="w-100 d-block" src="assets/img/scenery/image6.jpg" alt="Slide Image" />
+							<img className="w-100 d-block" src="bs1/assets/img/scenery/image6.jpg" alt="Slide Image" />
 						</div>
 					</div>
 					<div>

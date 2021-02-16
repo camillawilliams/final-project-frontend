@@ -9,6 +9,7 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Jumbotron } from "./component/jumbotron";
 
 //create your first component
 const Layout = () => {
@@ -17,24 +18,11 @@ const Layout = () => {
 	const basename = process.env.BASENAME || "";
 
 	return (
-		<div className="d-flex flex-column">
+		<div>
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />
-					<Switch>
-						<Route exact path="/">
-							<Home />
-						</Route>
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
-						</Route>
-						<Route>
-							<h1>Not found!</h1>
-						</Route>
-					</Switch>
+					<Jumbotron />
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
